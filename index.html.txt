@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karamveer's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Karamveer Rawat</h1>
+        <p>Beginner Web Developer</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I am learning coding and building my first website.</p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Learning CSS</li>
+            <li>Learning JavaScript</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: example@email.com</p>
+    </section>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
