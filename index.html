@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karamveer's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Karamveer Rawat</h1>
+        <p>Beginner Web Developer</p>
+        <div id="auth-section">
+            <span id="user-info"></span>
+            <button id="login-btn">Log In</button>
+            <button id="signup-btn">Sign Up</button>
+            <button id="logout-btn" style="display: none;">Log Out</button>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I am learning coding and building my first website.</p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Learning CSS</li>
+            <li>Learning JavaScript</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Subscribe</h2>
+        <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="subscribe" />
+            <p style="display:none">
+                <label>Don't fill this: <input name="bot-field" /></label>
+            </p>
+            <input type="email" name="email" placeholder="Your Email" required />
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: example@email.com</p>
+    </section>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <div id="auth-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2 id="auth-title">Login</h2>
+            <input type="email" id="auth-email" placeholder="Email" required />
+            <input type="password" id="auth-password" placeholder="Password" required />
+            <input type="text" id="auth-name" placeholder="Full Name (Signup only)" style="display: none;" />
+            <p id="auth-error" style="color: red; display: none;"></p>
+            <p id="auth-success" style="color: green; display: none;"></p>
+            <button id="submit-auth">Submit</button>
+            <button id="close-auth">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
